@@ -167,7 +167,7 @@ struct NeoPixel_RGBW_Full : Service::LightBulb {      // Addressable single-wire
     HSItoRGBW(h, s/100.0, v/100.0, &r, &g, &b, &w);
     Pixel::Color color;
     color = color.RGB(r, g, b, w);
-    pixel->set(color, 1);
+    pixel->set(color, nPixels);
          
     return(true);  
   }
